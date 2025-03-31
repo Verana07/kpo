@@ -35,7 +35,10 @@ body {
 .kep{
     width: 50px;
 }
-.carousel-inner
-{
-    
+.animated{
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
