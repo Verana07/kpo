@@ -36,6 +36,9 @@ function game() {
   };
 
   buttons.forEach((button) => {
+    if (button.id === "") {
+      return;
+    }
     button.addEventListener("click", () => {
       if (lastButton !== null) {
         const prevComputerChoiceImg = document.querySelector(
