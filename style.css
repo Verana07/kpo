@@ -21,15 +21,19 @@
     color: grey;
     text-decoration: none;
 }
-html {
+body {
+    max-width: 100vw;
     background-image: url(kids-game-rock-paper-scissors-pattern-white-background-134992609.jpg);
 }
-.container{
-    margin: 10%;
+
+.background{
+    background-color: #f0f0f0;
+    padding: 20px;
+    
 }
+
 .kep{
     width: 50px;
-
 }
 .carousel-inner
 {
