@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/rock.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Kő-Papír-Olló Játék</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h2>Hogyan játsszuk?</h2>
+        <p class="content">A kő-papír-olló egy klasszikus kézjáték, amelyet két játékos játszik. A játékosok egyszerre választanak a három lehetőség közül: kő, papír vagy olló. A szabályok a következők:</p>
+        <ul class="list-group text-start">
+            <li class="list-group-item">A kő legyőzi az ollót (összetöri).</li>
+            <li class="list-group-item">Az olló legyőzi a papírt (elvágja).</li>
+            <li class="list-group-item">A papír legyőzi a követ (betakarja).</li>
+        </ul>
+        
+        <h2 class="mt-4">Játékmenet</h2>
+        <p class="content">A játék során a két játékos egyszerre mutatja a választását. Ha mindketten ugyanazt választják, akkor döntetlen. Máskülönben a fenti szabályok szerint eldől a győztes.</p>
+        
+        <div id="gameCarousel" class="carousel slide mt-4 asd" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="aff2c60cbc71421fa14b961478f7b593.jpg" class="d-block w-100 kep" alt="Kő">
+                </div>
+                <div class="carousel-item active">
+                    <img src="aff2c60cbc71421fa14b961478f7b593.jpg" class="d-block w-100 kep" alt="Kő">
+                </div>
+                <div class="carousel-item active">
+                    <img src="aff2c60cbc71421fa14b961478f7b593.jpg" class="d-block w-100 kep" alt="Kő">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Előző</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Következő</span>
+            </button>
+        </div>
+    <div class="container">
+        <h1 class="text-center my-5">Kő-Papír-Olló Játék</h1>
+        <div class="attribution">
+            <a href="https://www.vecteezy.com/free-vector/rock-paper-scissors">Rock Paper Scissors Vectors by
+                Vecteezy</a>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        Játékos
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="btn btn-lg btn-primary mx-2 my-2 " id="rock">
+                            <img src="rock.png" alt="rock" width="50">
+                        </button>
+                        <button class="btn btn-lg btn-primary mx-2 my-2 " id="paper">
+                            <img src="paper.png" alt="paper" width="50">
+                        </button>
+                        <button class="btn btn-lg btn-primary mx-2 my-2" id="scissors">
+                            <img src="scissors.png" alt="scissors" width="50">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        Gép
+                    </div>
+                    <div class="card-body text-center my-lg-2 ">
+                        <h2 id="computer-choice"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white text-center">
+                        Eredmény
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 id="result">Válassz!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        Játékos Pontja
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 id="player-score">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        Gép Pontja
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 id="computer-score">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
