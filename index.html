@@ -14,19 +14,46 @@
     </style>
 </head>
 
+
+
 <body>
-    <div class="container text-center background animated">
-        <h2 class="text">Hogyan játsszuk?</h2>
-        <p class="content">A kő-papír-olló egy klasszikus kézjáték, amelyet két játékos játszik. A játékosok egyszerre választanak a három lehetőség közül: kő, papír vagy olló. A szabályok a következők:</p>
+    <header >
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navigáció</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigáció</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="#Alapok">Alapok</a></li>
+                        <li><a href="#Szabályok">Szabályok</a></li>
+                        <li><a href="#Játékmenet">Játékmenet</a></li>
+                        <li><a href="#Szabályok">Szabályok</a></li>
+                        <li><a href="#Játssz">Játssz!</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main><div class="container text-center background animated">
+        <section id="Alapok">
+        <h2 class="text" style="margin-top: 45px;">Alapok</h2>
+        <p>A kő-papír-olló játékot két ember játszhatja a kezével. Néha a pénzfeldobáshoz, a kockadobáshoz vagy a pálcatöréshez hasonlóan egy személy kiválasztásában is használják. A véletlen választásoktól eltérően azonban itt lehet fejleszteni a játéktechnikát ha több kört játszanak, mert a tapasztalt játékos kiismerheti ellenfele nem-véletlenszerű taktikáját.</p>
+        </section>
+        <section id ="Szabályok"></section>
+        <h2>Szabályok</h2>
+        <p class="content">A szabályok a következők:</p>
         <ul class="list-group text-start">
-            <li class="list-group-item">A kő legyőzi az ollót (összetöri).</li>
-            <li class="list-group-item">Az olló legyőzi a papírt (elvágja).</li>
-            <li class="list-group-item">A papír legyőzi a követ (betakarja).</li>
+            <li class="list-group-item">A játékosoknak egyszerre kell a kiválasztott kezet megmutatni.</li>
+            <li class="list-group-item">A kezet nem lehet megváltoztatni azután, ha már egy másik bemutatásra keerült.</li>
         </ul>
-        
-        <h2 class="mt-4">Játékmenet</h2>
-        <p class="content">A játék során a két játékos egyszerre mutatja a választását. Ha mindketten ugyanazt választják, akkor döntetlen. Máskülönben a fenti szabályok szerint eldől a győztes.</p>
-        
         <div id="gameCarousel" class="carousel slide mt-4 asd" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -49,7 +76,12 @@
                 <span class="visually-hidden">Következő</span>
             </button>
         </div>
-    <div class="container">
+        <section id="Játékmenet">
+        <h2 class="mt-4">Játékmenet</h2>
+        <p class="content">A játékosok hangosan háromig számolnak vagy a játék nevét, a "kő – papír – olló"-t mondják, minden számolásnál meglendítve a felemelt és ökölbe szorított kezüket. A harmadik számolás közben vagy az utána következő ütemben a játékosok kezükkel felveszik a három alakzat egyikét és megmutatják az ellenfelüknek.</p>
+        </section>
+        <section id="Játssz">
+        <div class="container">
         <h1 class="text-center my-5">Kő-Papír-Olló Játék</h1>
         <div class="attribution">
             <a href="https://www.vecteezy.com/free-vector/rock-paper-scissors">Rock Paper Scissors Vectors by
@@ -116,9 +148,18 @@
                     </div>
                 </div>
             </div>
+            
+            </section>
+            
         </div>
-    </div>
 
+    </div>
+    <div>
+        <footer>
+
+        </footer>
+    </div>
+</main>
 </body>
 
 </html>
